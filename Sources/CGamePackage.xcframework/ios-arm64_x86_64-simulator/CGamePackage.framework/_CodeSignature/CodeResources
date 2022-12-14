@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/CGamePackage.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hjQsmioaG1QIi4nCRW03ox9hlKg=
+		bQXmrAqu9UQNDos0dYDhMjrtIQY=
 		</data>
 		<key>Modules/CGamePackage.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/CGamePackage.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		j2g6UR6cxEaflw/hS+dOV9egL/s=
+		5UMKSpUlKxofV1I6ILCv5BNUvsY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6cZv29+x++nLvBWqiDTIRfNy9QwFHUCba6l5hWZJxrA=
+			1Dcmt/HLeIxL2r0tk9PbgLKho0nY9dSC0em5OabHkZg=
 			</data>
 		</dict>
 		<key>Modules/CGamePackage.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eZrmqrPMJeaS0KyxFsLj+y479oV2kILZm6sONoS/IJg=
+			nGKyudYI319S/qmJjQkGAaOuE5Zwyk72D2wWK1mHZSM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
