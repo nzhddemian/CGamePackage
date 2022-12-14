@@ -1,0 +1,254 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CGamePackage
+import AVFoundation
+@_exported import CGamePackage
+import Combine
+import CoreGraphics
+import CoreText
+import Foundation
+import GameplayKit
+import MetalKit
+import SceneKit
+import SpriteKit
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _SpriteKit_SwiftUI
+public struct GameWinPop : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($winner) public var winner: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $winner: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($setScore) public var setScore: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $setScore: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($showWinVeiw) public var showWinVeiw: Swift.Bool {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $showWinVeiw: SwiftUI.Binding<Swift.Bool> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($backgr_img) public var backgr_img: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $backgr_img: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($restartImg) public var restartImg: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $restartImg: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($backImg) public var backImg: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $backImg: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($sharedView) public var sharedView: SwiftUI.AnyView! {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $sharedView: SwiftUI.Binding<SwiftUI.AnyView?> {
+    get
+  }
+  public init(winner: SwiftUI.Binding<Swift.String>, setScore: SwiftUI.Binding<Swift.String>, showWinVeiw: SwiftUI.Binding<Swift.Bool>, backgr_img: Swift.String = "game_popup", restartImg: Swift.String = "restart", backImg: Swift.String = "back1", sharedView: SwiftUI.AnyView)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CGamePackage10GameWinPopV4bodyQrvp", 0) __
+}
+public struct MainView : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($currentView) public var currentView: CGamePackage.Views {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $currentView: SwiftUI.Binding<CGamePackage.Views> {
+    get
+  }
+  public init(currentView: SwiftUI.Binding<CGamePackage.Views>)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CGamePackage8MainViewV4bodyQrvp", 0) __
+}
+@_hasMissingDesignatedInitializers public class FontLoader {
+  public static var fontName: Swift.String
+  public static var fontScale: CoreGraphics.CGFloat
+  public static func loadFont(bundle: Foundation.Bundle)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CGPack {
+  @objc deinit
+}
+extension SwiftUI.Binding {
+  public func withDefault<T>(_ defaultValue: T) -> SwiftUI.Binding<T> where Value == Swift.Optional<T>
+}
+extension SwiftUI.View {
+  public func isHidden(_ hidden: Swift.Bool, remove: Swift.Bool = false) -> some SwiftUI.View
+  
+}
+public struct NeonText : SwiftUI.View {
+  @SwiftUI.State @_projectedValueProperty($font) public var font: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $font: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.Binding @_projectedValueProperty($text) public var text: Swift.String {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $text: SwiftUI.Binding<Swift.String> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($glowColor) public var glowColor: SwiftUI.Color {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $glowColor: SwiftUI.Binding<SwiftUI.Color> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($textColor) public var textColor: SwiftUI.Color {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $textColor: SwiftUI.Binding<SwiftUI.Color> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($fontSize) public var fontSize: CoreGraphics.CGFloat {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $fontSize: SwiftUI.Binding<CoreGraphics.CGFloat> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($opc) public var opc: CoreGraphics.CGFloat {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $opc: SwiftUI.Binding<CoreGraphics.CGFloat> {
+    get
+  }
+  @SwiftUI.State @_projectedValueProperty($brightness) public var brightness: CoreGraphics.CGFloat {
+    get
+    nonmutating set
+    nonmutating _modify
+  }
+  public var $brightness: SwiftUI.Binding<CoreGraphics.CGFloat> {
+    get
+  }
+  public init(font: Swift.String = "Bauhaus93", text: SwiftUI.Binding<Swift.String>, glowColor: SwiftUI.Color, textColor: SwiftUI.Color, fontSize: CoreGraphics.CGFloat, opc: CoreGraphics.CGFloat = 0.7, brightness: CoreGraphics.CGFloat = 0.25)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CGamePackage8NeonTextV4bodyQrvp", 0) __
+}
+extension SpriteKit.SKTexture {
+  public static func loadAsset(_ name: Swift.String) -> SpriteKit.SKTexture?
+}
+public enum Views : Swift.String, Swift.CaseIterable {
+  case main, settings, game, game_next
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CGamePackage.Views]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CGamePackage.Views] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Grid : Swift.String, Swift.CaseIterable {
+  case x3, x4, x5
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CGamePackage.Grid]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CGamePackage.Grid] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Model {
+  public static var grid: CGamePackage.Grid
+  public static var useAi: Swift.Bool
+  public static func fetchInfo(info: Foundation.NSDictionary, _ sScore: inout Swift.String, _ score: inout Swift.String, _ winner: inout Swift.String, _ pop: inout Swift.Bool)
+  @objc deinit
+}
+public struct GModel {
+}
+public class GameViewModel : Combine.ObservableObject {
+  public init()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public class GVCoordinator {
+  public static var navigation: UIKit.UINavigationController!
+  @objc deinit
+  public var swuiView: CGamePackage.Views
+  public static func mainView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreGraphics.CGFloat = 0.25, _ view: SwiftUI.AnyView)
+  public static func gameSecondView(from: QuartzCore.CATransitionSubtype, type: QuartzCore.CATransitionType, duration: CoreGraphics.CGFloat = 0.25, _ view: SwiftUI.AnyView)
+  public static func startGame(_ view: SwiftUI.AnyView)
+  required public init(navigationController: UIKit.UINavigationController)
+}
+public struct SettingsView : SwiftUI.View {
+  public init(isOnSound: Swift.Bool = false, isOnMusic: Swift.Bool = false, currentView: SwiftUI.Binding<CGamePackage.Views>)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CGamePackage12SettingsViewV4bodyQrvp", 0) __
+}
+extension SpriteKit.SKSpriteNode {
+  @_Concurrency.MainActor(unsafe) public func aspectFillToSize(fillSize: CoreGraphics.CGSize)
+  @_Concurrency.MainActor(unsafe) public static func emptyNode(_ sz: CoreGraphics.CGSize = CGSize(width: 100, height: 100)) -> SpriteKit.SKNode
+}
+@objc @_Concurrency.MainActor(unsafe) public class CGameScene : SpriteKit.SKScene {
+  @_Concurrency.MainActor(unsafe) public var addWinNode: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var useGameAi: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var onPause: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var firstStep: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public init(size: CoreGraphics.CGSize, grid: CGamePackage.Grid, background: Swift.String, useAi: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMove(to view: SpriteKit.SKView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func update(_ currentTime: Foundation.TimeInterval)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+}
+extension CGamePackage.Views : Swift.Equatable {}
+extension CGamePackage.Views : Swift.Hashable {}
+extension CGamePackage.Views : Swift.RawRepresentable {}
+extension CGamePackage.Grid : Swift.Equatable {}
+extension CGamePackage.Grid : Swift.Hashable {}
+extension CGamePackage.Grid : Swift.RawRepresentable {}

@@ -1,0 +1,11 @@
+framework module CGamePackage {
+  umbrella header "CGamePackage.h"
+
+  export *
+  module * { export * }
+}
+
+module CGamePackage.Swift {
+    header "CGamePackage-Swift.h"
+    requires objc
+}
